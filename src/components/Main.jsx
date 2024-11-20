@@ -10,7 +10,8 @@ const Main = ({ name, title, website, sections, buttons }) => {
         <h3 className="main--website">{website}</h3>
         <div className="main--contact">
           {buttons.map((button, index) => (
-            <button key={index} onClick={button.onClick}>
+            <button className="btn" key={index} onClick={button.onClick}>
+              <span className="icon">{button.icon}</span>
               {button.text}
             </button>
           ))}

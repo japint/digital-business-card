@@ -1,3 +1,6 @@
+import { MdEmail } from "react-icons/md";
+import { FaLinkedinIn } from "react-icons/fa6";
+
 export const cardData = {
   name: "Angelo Centeno",
   title: "Frontend Developer",
@@ -18,7 +21,15 @@ distinctio!`,
     },
   ],
   buttons: [
-    { text: "Email", onClick: () => console.log("Email clicked") },
-    { text: "Linkedin", onClick: () => console.log("Linkedin clicked") },
+    {
+      text: "Email",
+      icon: <MdEmail />,
+      onClick: () => console.log("Email clicked"),
+    },
+    {
+      text: "Linkedin",
+      icon: <FaLinkedinIn />,
+      onClick: () => console.log("Linkedin clicked"),
+    },
   ],
 };
